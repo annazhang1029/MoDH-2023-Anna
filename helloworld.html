@@ -2,20 +2,31 @@
 <html>
 <head>
 <link rel="stylesheet" href="mystyle.css">
+<title>Anna's HelloWorld</title>
 </head>
 <body>
 
 <h1>Hello World Project</h1>
 <p>Hi there, this is Anna!</p>
 <button onclick="displayDate()">Time of your visit</button>
+<button onclick="incrementCount()">Click to see number of clicks</button>
 
 <script>
     function displayDate(){
         document.getElementById("demo").innerHTML = Date();
     }
+
+    let count = 0;
+
+    function incrementCount(){
+        count+=1;
+    }
 </script>
 
 <h6 id="demo"></h6>
 
+<footer><script src="hello.js"></script></footer>
 </body>
+
+
 </html>
